@@ -51,10 +51,24 @@ public class OnlineExam {
             System.out.println("--------------------------------------------------");
         }
 
+        System.out.println("\n==================================================");
         System.out.println("Exam Finished!");
+        System.out.println("==================================================\n");
         System.out.println("Final Score: " + score + " / 10");
         System.out.println("Correct Answers: " + correctCount);
         System.out.println("Wrong Answers: " + wrongCount);
+        System.out.println("Percentage: " + (score / 10.0) * 100 + "%");
+        System.out.println("==================================================\n");
+        if (score >= 80) {
+            System.out.println("Result: EXCELLENT! 🎉");
+        } else if (score >= 60) {
+            System.out.println("Result: GOOD! 👍");
+        } else if (score >= 40) {
+            System.out.println("Result: AVERAGE!");
+        } else {
+            System.out.println("Result: NEEDS IMPROVEMENT!");
+        }
+        System.out.println("==================================================\n");
 
         scanner.close();
     }
