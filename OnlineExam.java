@@ -59,11 +59,11 @@ public class OnlineExam {
         System.out.println("Wrong Answers: " + wrongCount);
         System.out.println("Percentage: " + (score / 10.0) * 100 + "%");
         System.out.println("==================================================\n");
-        if (score >= 80) {
+        if (score >= 8) {
             System.out.println("Result: EXCELLENT! 🎉");
-        } else if (score >= 60) {
+        } else if (score >= 6) {
             System.out.println("Result: GOOD! 👍");
-        } else if (score >= 40) {
+        } else if (score >= 4) {
             System.out.println("Result: AVERAGE!");
         } else {
             System.out.println("Result: NEEDS IMPROVEMENT!");
